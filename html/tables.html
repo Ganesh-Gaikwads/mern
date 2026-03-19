@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+  <h1>Level-3 <p> Tables in Html</p>
+  </h1>
+  <ol type="I">
+    <li>Tables</li>
+    <li>Form</li>
+  </ol>
+
+
+  <!-- create a table -->
+  <table border="black">
+    <caption>Food Menu</caption>
+    <!-- <tr style="background-color:gray;"> this is not best to way style -->
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Frooti</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Samosa</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Chips</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2> semantic tags in table</h2>
+  
+  <!-- 
+<thead>  to wrap table header </thead>
+<tbody> to wrap table body     </tbody>
+<tfoot>  to wrap table footer  </tfoot> -->
+
+<br>
+
+
+<h2> colspan and rowspan attributes</h2>
+
+ <table border="black">
+  <caption>Food Menu</caption>
+   <thead>
+    <tr>
+      <th rowspan="2">Item</th>
+      <th colspan="2">Price</th>
+    </tr>
+    <tr>
+      <th>INR</th>
+      <th>USD</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>Frooti</td>
+      <td>10</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Samosa</td>
+      <td>12</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Chips</td>
+      <td>20</td>
+      <td>0.28</td>
+    </tr>
+   </tbody>
+
+ </table>
+
+ <br>
+ <br>
+  
+
+<!-- Practice question- recreating table using html  -->
+
+
+<table border="green">
+  <caption>A test table with merged cells</caption>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Avarage</th>
+      <th rowspan="2">Red eyes</th>
+    </tr>
+    <tr>
+      <th>Height</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Males</td>
+      <td>1.9</td>
+      <td>0.003</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Females</td>
+      <td>1.7</td>
+      <td> 0.002</td>
+      <td> 43%</td>
+    </tr>
+  </tbody>
+</table>
+  
+</body>
+</html>

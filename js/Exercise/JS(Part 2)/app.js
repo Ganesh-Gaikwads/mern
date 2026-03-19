@@ -109,3 +109,7 @@ function lastDigits(num1){
 }
 
 lastDigits(12);
+
+
+
+ 

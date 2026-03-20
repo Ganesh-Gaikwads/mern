@@ -1,16 +1,23 @@
 import Product from "./Product";
-function ProductTab(){
+ 
 
-   let features = ["fast","Durable", "hi-tech"];
-   const options = {a:"fast", b:"Durable", c:"hi-tech"};
+function ProductTab() {
+ let styles ={
+  display: "flex",
+  flexWrap:"wrap",
+  justifyContent:"center",
+  alignItems:"center"
+ }
 
   return (
-    <>
-    <Product title="Phone" price={30000}  features={features} features2={options} />
-     <Product title="Laptop" price={45000} features={features} features2={options} />
-     <Product title="headphone" price={1500} features={features} features2={options}/>
-    </>
-  )
+    <div style={styles}>
+       
+      <Product  title="Logitech mx master" idx={0}/>
+      <Product  title="Apple Pencil (2nd gen)"idx={1} />
+      <Product title=" Zebronic zeb-transformer" idx={2}/>
+      <Product title="Petronics toad-23" idx={3}/>
+    </div>
+  );
 }
 
 export default ProductTab;

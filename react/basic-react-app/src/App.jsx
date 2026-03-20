@@ -1,25 +1,16 @@
 import "./App.css";
-import Title from "./title.jsx";
- 
-import ProductTab from "./ProductTab.jsx";
- 
+import Button from "./Button";
+import Form from "./Form";
 
 
-function Description(){
-  return <h2>hell i am learning react</h2>
+function App() {
+  return (
+    <>
+      {/* <Button/> */}
+      <Form/>  
+            
+    </>
+  );
 }
- 
 
-function App(){
-
-  return <ProductTab/>
- 
- 
-
-} 
-
-
-
- 
-export default App
-
+export default App;

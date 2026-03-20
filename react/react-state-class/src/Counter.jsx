@@ -1,22 +1,27 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-export default function Counter(){
- let [count, setCount] = useState(0);
+export default function Counter() {
+  let [count, setCount] = useState(0); // initialization 
+  // console.log("componenet is redered");
+  // console.log(`count = ${count}`);
 
+  let incCount = () => {
+    setCount((currCount)=>{
+       return currCount+=1;
+    });
+     setCount((currCount)=>{
+       return currCount+=1;
+    }); 
 
- let incCount = ()=>{
- 
-  setCount(count+1); 
-  console.log(count);  
- }
+    // console.log(`inside increase count = ${count}`);
 
+    setCount(25);
+  };
 
   return (
     <div>
-    <h3>Count{count}</h3>
-     <button onClick={incCount}>Increment</button>
+      <h3>Count = {count}</h3>
+      <button onClick={incCount}>Increase Count </button>
     </div>
-    
-  )
-  
+  );
 }

@@ -1,0 +1,12 @@
+h1{
+  margin-top: 150px;
+}
+
+.ticket {
+  border: 1px solid rgb(255, 184, 184);
+  border-radius: 14px;
+  border-style:groove;
+  margin-left:380px;
+  margin-right:380px;
+  margin-top: 100px;
+}
